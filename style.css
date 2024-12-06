@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #caf0f8;
+    padding-top: 1rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 0.4rem;
+}
+
+button{
+    height: 3rem;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+    color: #003049;
+    background-color: #cdb4db;
+}
+
+button:focus{
+    outline: none;
+}
+
+#reset-Btn{
+    margin: 1rem;
+    width: 10rem;
+    
+}
+
+.playBtn{
+    width: 6rem;
+}
+
+#winnerFound{
+    display: none;
+    text-align: center;
+    padding-top: 3rem;
+    position: fixed;
+    top: 25px;
+    background-color: #eef2f3;
+    width: 17rem;
+    height: 10rem;
+    align-items: center;
+}
+
+#winnerAnounce{
+    font-weight: 600;
+    width: 10rem;
+    margin: auto;
+}
+
+/* #playAgain{
+    width: 9rem;
+    font-size: 1.3rem;
+} */

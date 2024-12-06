@@ -5,6 +5,15 @@ let winner = null
 let foundWinner = false
 
 
+const btnOne = document.querySelector('#btn-1')
+const btnTwo = document.querySelector('#btn-2')
+const btnThree = document.querySelector('#btn-3')
+const btnFour = document.querySelector('#btn-4')
+const btnFive = document.querySelector('#btn-5')
+const btnSix = document.querySelector('#btn-6')
+const btnSeven = document.querySelector('#btn-7')
+const btnEight = document.querySelector('#btn-8')
+const btnNine = document.querySelector('#btn-9')
 const allPlayBtns = document.querySelectorAll(".playBtn")
 const winnerFoundDiv = document.querySelector('#winnerFound')
 const winnerAnnounce = document.querySelector('#winnerAnounce')
@@ -55,7 +64,7 @@ function checkWinner(){
             gameTied++
         }
     }
-    
+
     if(gameTied===9 && !foundWinner){
         winnerFoundDiv.style.display = 'flex'
         winnerAnnounce.textContent = `The game is tied`

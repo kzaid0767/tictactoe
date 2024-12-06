@@ -8,7 +8,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #caf0f8;
-    padding-top: 1rem;
+    padding-top: 3rem;
 }
 
 .container{
@@ -28,6 +28,10 @@ button{
 
 button:focus{
     outline: none;
+}
+
+button:disabled{
+    cursor: not-allowed;
 }
 
 #reset-Btn{
